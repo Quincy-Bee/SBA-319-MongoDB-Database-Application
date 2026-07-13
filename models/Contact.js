@@ -39,8 +39,6 @@ const contactSchema = new mongoose.Schema(
   }
 );
 
-// Index frequently searched fields
-contactSchema.index({ email: 1 });
 contactSchema.index({ neighborhood: 1 });
 
 export default mongoose.model("Contact", contactSchema);
